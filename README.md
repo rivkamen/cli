@@ -1,24 +1,17 @@
-```markdown
 # Code Bundler CLI
 
 This project provides a command-line interface (CLI) tool for bundling code files from a specified list of programming languages into a single file. The bundled file can optionally include comments for the file origin, remove empty lines, and be sorted by name or type.
 
----
-
 ## Features
 
-- **Bundle Command**: Bundles source code files from selected programming languages into one file.
-- **Create Response File Command**: Simplifies the usage of the `bundle` command by generating a response file with all necessary options.
-
----
+- **Bundle Command**: Allows bundling of code files into one file.
+- **Create Response File Command**: Simplifies the usage of the `bundle` command by generating a response file containing all necessary options.
 
 ## Installation
 
 1. Clone the repository or download the source files.
 2. Compile the project using your preferred C# development environment (e.g., Visual Studio or Visual Studio Code).
 3. Build the project into an executable.
-
----
 
 ## Usage
 
@@ -72,17 +65,12 @@ Once the user fills in the necessary details, a `.rsp` file is created. To execu
 dotnet @responseFile.rsp
 ```
 
----
+### Example Workflow:
 
-## Example Workflow:
-
-1. **Generate a Response File**:  
+1. **Generate a Response File**:
    Run the `create-rsp` command and answer the prompts.
-   
-2. **Run the `bundle` Command**:  
+2. **Run the `bundle` Command**:
    Execute the generated `.rsp` file to bundle the files based on the provided options.
-
----
 
 ## How It Works
 
@@ -104,14 +92,10 @@ dotnet @responseFile.rsp
 6. **Creating a Response File**:  
    The `create-rsp` command allows users to answer prompts for all the `bundle` options, which are then saved into a `.rsp` file for easy future use.
 
----
-
 ## Notes:
 
 - **File Paths**: If the output file path contains spaces, it must be enclosed in double quotes.
 - **Directory Restrictions**: Files from directories like `bin` and `debug` are automatically excluded from the bundle.
-
----
 
 ## Example of Running the Commands
 
@@ -132,30 +116,10 @@ dotnet @responseFile.rsp
    dotnet @my_bundle_rsp.rsp
    ```
 
----
-
 ## Contribution
 
 Feel free to fork the project, submit issues, and create pull requests. All contributions are welcome!
 
----
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
----
-
-### Explanation of Sections:
-
-- **Introduction and Features**: Briefly describes what the project does and its key features.
-- **Installation**: Instructions to set up and build the project.
-- **Usage**: Detailed instructions on how to use both commands: `bundle` and `create-rsp`.
-- **How It Works**: A breakdown of how the key options and commands operate.
-- **Example Workflow**: Step-by-step guide on how to use the tool.
-- **Notes**: Additional information regarding specific requirements for file paths and directory restrictions.
-- **Examples of Running Commands**: Showcasing practical examples of usage.
-- **Contribution and License**: Encouraging contributions and providing licensing details.
-
-This layout is user-friendly and provides a clean, clear structure for a README file.
